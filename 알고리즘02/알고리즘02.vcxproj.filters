@@ -24,5 +24,11 @@
     <ClCompile Include="조합재귀문제.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="babyGin.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="babyGin_sol.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
