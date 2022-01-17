@@ -18,12 +18,13 @@ bool promising(int q) {//새로운 퀸을 입력 받는다. 놓을 수 없다면 false 인지
 	return true;
 }
 void queens(int q) {
-	if (!promising(q)) return;
+	if (!promising(q)) return; //false면 안 해~
 	//-----가지 치기 ----//
 	if (q == N) {
 		printResult();
 		return;
-	}//N개의 퀸을 다 놓으면
+	}//N개의 퀸을 다 놓으면 끝.
+	//아닌 경우엔 q+1번째 퀸은 전부다 돌아가면서 놓는다.
 	for (int i = 1; i <= N; ++i) {
 		Row[q + 1] = i;
 		queens(q + 1);
